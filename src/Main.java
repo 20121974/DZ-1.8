@@ -24,7 +24,7 @@ public class Main {
         String versionMassage = productionYear < currentYear ? "облегченную": " ";
         String osMassage = os == 0 ? "iOS" : "android";
         System.out.printf("Установите %s версию приложения для %s по ссылке", versionMassage, osMassage);
-        System.out.println("");
+
     }
     public static void printCalculateDeliveryDays(int distance) {
     int start = 20;
@@ -32,7 +32,8 @@ public class Main {
     int result = 1;
     if (distance >= start) {
         result = (Math.abs((distance - start) / step) + 2);}
-        System.out.println("Потребуется для доставки дней " + result);
+        System.out.println("");
+    System.out.println("Потребуется для доставки дней " + result);
     }
 }
 
